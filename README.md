@@ -1,5 +1,3 @@
-# RayuFIneFoods.com
-
 # Rayu Fine Foods
 
 ## Authors
