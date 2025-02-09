@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Personalized Coffee Mug",
+        "price": "$15",
+        "image": "assets/images/coffee_mug.jpg",
+        "description": "A custom coffee mug with your favorite quote or design."
+    },
+    {
+        "id": 2,
+        "name": "Luxury Scented Candles",
+        "price": "$40",
+        "image": "assets/images/scented_candles.jpg",
+        "description": "Relax with our luxury scented candles, perfect for gifting."
+    },
+    {
+        "id": 3,
+        "name": "Customized Gift Basket",
+        "price": "$60",
+        "image": "assets/images/gift_basket.jpg",
+        "description": "A beautiful gift basket with gourmet treats and delights."
+    }
+]

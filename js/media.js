@@ -1,4 +1,4 @@
-// Define the sections data
+// Define the sections data (importing from data.json)
 const sectionsData = {
     "home": {
         "title": "Welcome to Rayu Fine Foods",
@@ -7,39 +7,38 @@ const sectionsData = {
     },
     "about": {
         "title": "About Us",
-        "image": "assets/images/about-us-image.jpg",
         "content": "Rayu Fine Foods has been serving premium quality cakes and catering for over 20 years. We believe in quality, freshness, and customer satisfaction.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "image": "assets/images/about-us-image.jpg"
     },
     "cakes": {
         "title": "Cakes and Bakery",
         "image": "assets/images/cakes-image.jpg",
         "content": "Delicious and freshly baked cakes for every occasion. Our bakery offers a wide variety of cakes, pastries, and other treats.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "button": "cakes.html"
     },
     "catering": {
         "title": "Catering",
         "image": "assets/images/catering-image.jpg",
         "content": "We provide top-notch catering services for corporate events, weddings, and private parties. Let us handle the food so you can enjoy your event.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "button": "catering.html"
     },
     "gifts": {
         "title": "Gifts and Hampers",
         "image": "assets/images/gifts-image.jpg",
         "content": "Unique gift hampers for every occasion. Whether it's a birthday, anniversary, or corporate gift, we have something special for you.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "button": "gifts.html"
     },
     "contact": {
         "title": "Contact Us",
         "image": "assets/images/contact-image.jpg",
         "content": "Get in touch with us for any queries, orders, or feedback. We are here to assist you in every way possible.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "button": "contact.html"
     },
     "media": {
         "title": "Media & Press",
         "image": "assets/images/media-image.jpg",
         "content": "Learn more about our latest media appearances, press releases, and the story of Rayu Fine Foods.",
-        "whatsapp": "https://wa.me/1234567890?text=Hello%20Rayu%20Fine%20Foods%20Team"
+        "button": "media.html"
     }
 };
 
@@ -65,12 +64,13 @@ function loadSections() {
         textDiv.appendChild(title);
         textDiv.appendChild(content);
 
-        // Add WhatsApp link for all sections except home
-        if (sectionKey !== "home") {
-            const whatsappLink = document.createElement('a');
-            whatsappLink.href = section.whatsapp;
-            whatsappLink.textContent = 'Contact Us on WhatsApp';
-            textDiv.appendChild(whatsappLink);
+        // Add button for sections except home and about
+        if (sectionKey !== "home" && sectionKey !== "about") {
+            const button = document.createElement('a');
+            button.href = section.button;
+            button.classList.add('btn', 'btn-primary');
+            button.textContent = 'View More';
+            textDiv.appendChild(button);
         }
 
         // Add alternating classes for layout
@@ -86,6 +86,7 @@ function loadSections() {
     });
 }
 
+// Function to show a specific section
 function showSection(sectionKey) {
     const container = document.getElementById("content-container");
     const selectedSection = sectionsData[sectionKey];
@@ -113,12 +114,13 @@ function showSection(sectionKey) {
     textDiv.appendChild(title);
     textDiv.appendChild(content);
 
-    // Add WhatsApp link for all sections except home
-    if (sectionKey !== "home") {
-        const whatsappLink = document.createElement('a');
-        whatsappLink.href = selectedSection.whatsapp;
-        whatsappLink.textContent = 'Contact Us on WhatsApp';
-        textDiv.appendChild(whatsappLink);
+    // Add button for sections except home and about
+    if (sectionKey !== "home" && sectionKey !== "about") {
+        const button = document.createElement('a');
+        button.href = selectedSection.button;
+        button.classList.add('btn', 'btn-primary');
+        button.textContent = 'View More';
+        textDiv.appendChild(button);
     }
 
     // Append elements
