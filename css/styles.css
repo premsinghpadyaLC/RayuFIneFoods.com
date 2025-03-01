@@ -230,16 +230,26 @@ body {
   .home-section p {
     font-size: 1rem;
   }
+  .logo {
+    width: 250px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .home-section h1 {
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablet */
+  .logo {
+    width: 350px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+  }
+    .home-section h1 {
     font-size: 2.2rem;
   }
   .home-section p {
     font-size: 1.1rem;
   }
+
 }
+
 
 #main1 {
     display: flex;
