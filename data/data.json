@@ -1,0 +1,37 @@
+{
+    "cakes": {
+        "title": "Our Cakes Collection",
+        "image": "images/cakes.jpg",
+        "content": "Choose from our delicious cake varieties.",
+        "buttons": {
+            "Custom Cakes": "cakes.html?section=custom-cakes",
+            "Rayu Classic": "cakes.html?section=rayu-classic",
+            "Ethnic Italian": "cakes.html?section=ethnic-italian",
+            "Wedding Cakes": "cakes.html?section=wedding-cakes",
+            "Theme Cakes": "cakes.html?section=theme-cakes",
+            "Cupcakes": "cakes.html?section=cupcakes",
+            "Bakery": "cakes.html?section=bakery"
+        }
+    },
+    "bakery": {
+        "title": "Our Bakery Collection",
+        "image": "images/bakery.jpg",
+        "content": "Enjoy our baked goods.",
+        "buttons": {
+            "Puffs": "cakes.html?section=puffs",
+            "Baked Donuts": "cakes.html?section=baked-donuts"
+        }
+    },
+    "puffs": {
+        "title": "Puffs",
+        "image": "images/puffs.jpg",
+        "content": "Delicious puffs in different flavors.",
+        "buttons": {
+            "Chicken": "cakes.html?section=chicken-puff",
+            "Egg": "cakes.html?section=egg-puff",
+            "Potato & Peas": "cakes.html?section=potato-peas-puff",
+            "Cheese & Corn": "cakes.html?section=cheese-corn-puff"
+        }
+    }
+}
+    
