@@ -6,37 +6,37 @@ document.addEventListener("DOMContentLoaded", function () {
         cakes: {
             title: "Cakes & Bakery",    
             description: "Explore our delicious selection of cakes, cupcakes, and baked goods.",
-            image: "assets/cakes.jpg",
+            image: "assets/cakes.jfif",
             items: {
-                "Custom Cakes": { description: "Special cakes designed to your taste.", image: "assets/custom-cakes.jpg" },
-                "Rayu Classic": { description: "Our signature cakes with premium ingredients.", image: "assets/classic.jpg" },
-                "Ethnic Italian": { description: "Authentic Italian-style cakes and pastries.", image: "assets/italian.jpg" },
-                "Wedding Cakes": { description: "Elegant wedding cakes for your special day.", image: "assets/wedding.jpg" },
-                "Theme Cakes": { description: "Creative cakes customized for every occasion.", image: "assets/theme.jpg" },
-                "Cupcakes": { description: "Delicious cupcakes with a variety of flavors.", image: "assets/cupcakes.jpg" },
+                "Custom Cakes": { description: "Special cakes designed to your taste. Please let us know the purpose to design. Call us now", image: "assets/custom-cakes.jfif" },
+                "Rayu Classic": { description: "Our signature cakes with premium ingredients.", image: "assets/classic.jfif" },
+                "Ethnic Italian": { description: "Authentic Italian-style cakes and pastries.", image: "assets/italian.jfif" },
+                "Wedding Cakes": { description: "Elegant wedding cakes for your special day.", image: "assets/wedding.jfif" },
+                "Theme Cakes": { description: "Creative cakes customized for every occasion.", image: "assets/theme.jfif" },
+                "Cupcakes": { description: "Delicious cupcakes with a variety of flavors.", image: "assets/cupcakes.jfif" },
                 "Bakery": {
                     title: "Bakery",
                     description: "Freshly baked pastries and donuts.",
-                    image: "assets/bakery.jpg",
+                    image: "assets/bakery.jfif",
                     items: {
                         "Puffs": {
                             title: "Puffs",
                             description: "Crispy and delicious puff pastries.",
-                            image: "assets/puffs.jpg",
+                            image: "assets/puffs.jfif",
                             items: {
-                                "Chicken": { description: "Spicy chicken-filled puffs.", image: "assets/chicken-puff.jpg" },
-                                "Egg": { description: "Classic egg puffs with a flaky crust.", image: "assets/egg-puff.jpg" },
-                                "Potato & Peas": { description: "Vegetarian puffs with a tasty filling.", image: "assets/veg-puff.jpg" },
-                                "Cheese & Corn": { description: "Cheesy corn-filled puff pastries.", image: "assets/cheese-corn-puff.jpg" }
+                                "Chicken": { description: "Spicy chicken-filled puffs.", image: "assets/chicken-puff.jfif" },
+                                "Egg": { description: "Classic egg puffs with a flaky crust.", image: "assets/egg-puff.jfif" },
+                                "Potato & Peas": { description: "Vegetarian puffs with a tasty filling.", image: "assets/veg-puff.jfif" },
+                                "Cheese & Corn": { description: "Cheesy corn-filled puff pastries.", image: "assets/cheese-corn-puff.jfif" }
                             }
                         },
                         "Baked Donuts": {
                             title: "Baked Donuts",
                             description: "Soft, baked donuts available in different flavors.",
-                            image: "assets/donuts.jpg",
+                            image: "assets/donuts.jfif",
                             items: {
-                                "Egg": { description: "Baked donuts made with eggs.", image: "assets/egg-donut.jpg" },
-                                "Eggless": { description: "Delicious egg-free baked donuts.", image: "assets/eggless-donut.jpg" }
+                                "Egg": { description: "Baked donuts made with eggs.", image: "assets/egg-donut.jfif" },
+                                "Eggless": { description: "Delicious egg-free baked donuts.", image: "assets/eggless-donut.jfif" }
                             }
                         }
                     }
@@ -46,36 +46,36 @@ document.addEventListener("DOMContentLoaded", function () {
         catering: {
             title: "Catering Services",
             description: "We provide premium catering for all occasions.",
-            image: "assets/catering.jpg",
+            image: "assets/catering.jfif",
             items: {
-                "Indian (Authentic)": { description: "Traditional Indian dishes with rich flavors.", image: "assets/indian.jpg" },
-                "Italian": { description: "Classic Italian cuisine made fresh.", image: "assets/italian-food.jpg" },
-                "Asian": { description: "A variety of Asian-inspired dishes.", image: "assets/asian.jpg" },
-                "100% Organic": { description: "Healthy and organic meal options.", image: "assets/organic.jpg" }
+                "Indian (Authentic)": { description: "Traditional Indian dishes with rich flavors.", image: "assets/indian.jfif" },
+                "Italian": { description: "Classic Italian cuisine made fresh.", image: "assets/italian-food.jfif" },
+                "Asian": { description: "A variety of Asian-inspired dishes.", image: "assets/asian.jfif" },
+                "100% Organic": { description: "Healthy and organic meal options.", image: "assets/organic.jfif" }
             }
         },
         gifts: {
             title: "Gifts & Hampers",
             description: "Perfect gift boxes for every occasion.",
-            image: "assets/gifts.jpg",
+            image: "assets/gifts.jfif",
             items: {
                 "Cupcake Boxes": {
                     title: "Cupcake Boxes",
                     description: "Delicious cupcakes packed beautifully.",
-                    image: "assets/cupcake-box.jpg",
+                    image: "assets/cupcake-box.jfif",
                     items: {
-                        "2": { description: "Box of 2 cupcakes.", image: "assets/box-2.jpg" },
-                        "4": { description: "Box of 4 cupcakes.", image: "assets/box-4.jpg" },
-                        "6": { description: "Box of 6 cupcakes.", image: "assets/box-6.jpg" },
-                        "12": { description: "Box of 12 cupcakes.", image: "assets/box-12.jpg" },
-                        "Custom": { description: "Customizable cupcake box.", image: "assets/custom-box.jpg" }
+                        "2": { description: "Box of 2 cupcakes.", image: "assets/box-2.jfif" },
+                        "4": { description: "Box of 4 cupcakes.", image: "assets/box-4.jfif" },
+                        "6": { description: "Box of 6 cupcakes.", image: "assets/box-6.jfif" },
+                        "12": { description: "Box of 12 cupcakes.", image: "assets/box-12.jfif" },
+                        "Custom": { description: "Customizable cupcake box.", image: "assets/custom-box.jfif" }
                     }
                 },
-                "Cookies": { description: "Delicious assorted cookies.", image: "assets/cookies.jpg" },
-                "Tarts": { description: "Sweet and savory tarts.", image: "assets/tarts.jpg" },
-                "Donut Hamper": { description: "A box full of delicious donuts.", image: "assets/donut-hamper.jpg" },
-                "Sweet & Savory Hamper": { description: "A mix of sweet and savory treats.", image: "assets/sweet-savory.jpg" },
-                "Custom Hamper": { description: "Customize your own gift hamper.", image: "assets/custom-hamper.jpg" }
+                "Cookies": { description: "Delicious assorted cookies.", image: "assets/cookies.jfif" },
+                "Tarts": { description: "Sweet and savory tarts.", image: "assets/tarts.jfif" },
+                "Donut Hamper": { description: "A box full of delicious donuts.", image: "assets/donut-hamper.jfif" },
+                "Sweet & Savory Hamper": { description: "A mix of sweet and savory treats.", image: "assets/sweet-savory.jfif" },
+                "Custom Hamper": { description: "Customize your own gift hamper.", image: "assets/custom-hamper.jfif" }
             }
         }
     };
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Update main content
         container.innerHTML = `
             <h2>${title}</h2>
-            <img src="${data.image || "assets/default.jpg"}" class="img-fluid mb-3" alt="${title}">
+            <img src="${data.image || "assets/default.jfif"}" class="img-fluid mb-3" alt="${title}">
             <p>${data.description || "No description available."}</p>
             <div id="buttons-container" class="d-flex flex-wrap gap-2"></div>
         `;
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     displayContent(container, breadcrumbContainer, {
                         title: value.title || key,
                         description: value.description || "No description available.",
-                        image: value.image || "assets/default.jpg",
+                        image: value.image || "assets/default.jfif",
                         items: value.items || null
                     }, [...path, key]);
                 };

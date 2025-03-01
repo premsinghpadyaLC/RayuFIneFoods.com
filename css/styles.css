@@ -262,7 +262,7 @@ body {
 /* Tablets (iPads, 768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
-    width: 350px; /* Adjust width */
+    width: 280px; /* Adjust width */
     height: auto; /* Maintain aspect ratio */
   }
 
@@ -296,7 +296,7 @@ body {
 /* Desktop (1025px and above) */
 @media (min-width: 1025px) {
   .logo {
-    width: 450px; /* Default width */
+    width: 310px; /* Default width */
     height: auto;
   }
 
