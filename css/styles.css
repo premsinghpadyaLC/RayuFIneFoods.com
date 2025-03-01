@@ -397,6 +397,9 @@ footer span {
     transform: scale(1.2);
 }
 
+/* ==========================
+  🌟 Hero Section Styles
+=========================== */
 .hero {
     display: flex;
     justify-content: center;
@@ -445,6 +448,9 @@ footer span {
     filter: brightness(50%);  /* Darken the image for text contrast */
 }
 
+/* ==========================
+  🌟 Marquee Styles
+=========================== */
 .welcome-marquee-container {
     width: 100%;
     overflow: hidden;
@@ -469,4 +475,89 @@ footer span {
     100% {
         transform: translateX(-100%);
     }
+}
+
+/* ==========================
+  🌟 Responsive Design for Hero and Marquee
+=========================== */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .hero {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+
+  .hero-content h1, .hero-content p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .flyer-space-left, .flyer-space-right {
+    width: 20%; /* Increase flyer space for mobile */
+  }
+
+  .flyer-image {
+    object-position: center center;
+  }
+
+  .welcome-marquee {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+
+  .welcome-marquee-container {
+    padding: 10px 0;
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 300px; /* Maintain height for tablets */
+  }
+
+  .hero-content h1, .hero-content p {
+    font-size: 24px; /* Adjust font size for tablet */
+  }
+
+  .flyer-space-left, .flyer-space-right {
+    width: 15%; /* Moderate flyer space for tablet */
+  }
+
+  .flyer-image {
+    object-position: center center;
+  }
+
+  .welcome-marquee {
+    font-size: 14px; /* Medium text for tablets */
+  }
+
+  .welcome-marquee-container {
+    padding: 8px 0;
+  }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .hero {
+    height: 350px; /* Default height for desktop */
+  }
+
+  .hero-content h1, .hero-content p {
+    font-size: 36px; /* Larger font size for desktop */
+  }
+
+  .flyer-space-left, .flyer-space-right {
+    width: 10%; /* Default flyer space for desktop */
+  }
+
+  .flyer-image {
+    object-position: center center;
+  }
+
+  .welcome-marquee {
+    font-size: 16px; /* Larger text for desktop */
+  }
+
+  .welcome-marquee-container {
+    padding: 5px 0;
+  }
 }
