@@ -281,3 +281,97 @@ main {
     text-align: center;
     padding: 40px 0; /* Adds some spacing without taking full height */
 }
+
+/* ==========================
+  🌟 Footer Styling
+=========================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+/* Copyright Text */
+footer span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Social Media Icons Container */
+.w3-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between icons */
+    flex-wrap: wrap; /* Ensures icons wrap on smaller screens */
+}
+
+/* Social Media Icons */
+.w3-flex a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.w3-flex a img:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================
+  🌟 Responsive Design
+=========================== */
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 15px;
+    }
+    footer span {
+        font-size: 14px;
+    }
+    .w3-flex {
+        gap: 10px;
+    }
+    .w3-flex a img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Tablets (iPads, 481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    footer {
+        padding: 18px;
+    }
+    footer span {
+        font-size: 15px;
+    }
+    .w3-flex {
+        gap: 12px;
+    }
+    .w3-flex a img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    footer {
+        padding: 20px;
+    }
+    footer span {
+        font-size: 16px;
+    }
+    .w3-flex {
+        gap: 15px;
+    }
+    .w3-flex a img {
+        width: 30px;
+        height: 30px;
+    }
+}

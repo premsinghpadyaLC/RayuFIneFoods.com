@@ -32,19 +32,19 @@ customElements.define('aliya-header', MyHeader);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer class="w3-light-grey w3-padding-16 w3-display-container w3-flex w3-justify-between w3-align-center w3-padding-large">
-            <span class="w3-margin-left">&copy; 2025 Rayu Fine Foods</span>
+        <footer>
+            <span>&copy; 2025 Rayu Fine Foods</span>
             <div class="w3-flex">
-                <a href="https://www.facebook.com" target="_blank" class="w3-margin-right">
+                <a href="https://www.facebook.com" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="24" height="24" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com" target="_blank" class="w3-margin-right">
+                <a href="https://www.instagram.com" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24" height="24" alt="Instagram">
                 </a>
-                <a href="https://www.twitter.com" target="_blank" class="w3-margin-right">
+                <a href="https://www.twitter.com" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" height="24" alt="Twitter">
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" class="w3-margin-right">
+                <a href="https://www.linkedin.com" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" width="24" height="24" alt="LinkedIn">
                 </a>
                 <a href="https://www.youtube.com" target="_blank">
