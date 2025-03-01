@@ -218,38 +218,114 @@ body {
 /* ==========================
   🌟 Responsive Design
 =========================== */
+
+/* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
   .navbar-nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .home-section h1 {
     font-size: 2rem;
   }
+
   .home-section p {
     font-size: 1rem;
   }
+
   .logo {
     width: 250px; /* Adjust width */
     height: auto; /* Maintain aspect ratio */
   }
+
+  /* Footer */
+  footer {
+    padding: 15px;
+  }
+
+  footer span {
+    font-size: 14px;
+  }
+
+  .w3-flex {
+    gap: 10px;
+  }
+
+  .w3-flex a img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) { /* Tablet */
+/* Tablets (iPads, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     width: 350px; /* Adjust width */
     height: auto; /* Maintain aspect ratio */
   }
-    .home-section h1 {
+
+  .home-section h1 {
     font-size: 2.2rem;
   }
+
   .home-section p {
     font-size: 1.1rem;
   }
 
+  /* Footer */
+  footer {
+    padding: 18px;
+  }
+
+  footer span {
+    font-size: 15px;
+  }
+
+  .w3-flex {
+    gap: 12px;
+  }
+
+  .w3-flex a img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .logo {
+    width: 450px; /* Default width */
+    height: auto;
+  }
+
+  .home-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-section p {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+
+  footer span {
+    font-size: 16px;
+  }
+
+  .w3-flex {
+    gap: 15px;
+  }
+
+  .w3-flex a img {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 #main1 {
     display: flex;
@@ -321,57 +397,3 @@ footer span {
     transform: scale(1.2);
 }
 
-/* ==========================
-  🌟 Responsive Design
-=========================== */
-
-/* Mobile Devices (up to 480px) */
-@media (max-width: 480px) {
-    footer {
-        padding: 15px;
-    }
-    footer span {
-        font-size: 14px;
-    }
-    .w3-flex {
-        gap: 10px;
-    }
-    .w3-flex a img {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-/* Tablets (iPads, 481px to 1024px) */
-@media (min-width: 481px) and (max-width: 1024px) {
-    footer {
-        padding: 18px;
-    }
-    footer span {
-        font-size: 15px;
-    }
-    .w3-flex {
-        gap: 12px;
-    }
-    .w3-flex a img {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-/* Desktop (1025px and above) */
-@media (min-width: 1025px) {
-    footer {
-        padding: 20px;
-    }
-    footer span {
-        font-size: 16px;
-    }
-    .w3-flex {
-        gap: 15px;
-    }
-    .w3-flex a img {
-        width: 30px;
-        height: 30px;
-    }
-}
