@@ -562,12 +562,12 @@ footer span {
 
 .flyer-space-left {
     left: 0;
-    width: 0%;  /* Initially hidden */
+    width: 10%;  /* Start at 10% for all screen sizes */
 }
 
 .flyer-space-right {
     right: 0;
-    width: 0%;  /* Initially hidden */
+    width: 10%;  /* Start at 10% for all screen sizes */
 }
 
 .flyer-content {
@@ -585,26 +585,26 @@ footer span {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);  /* Darken the image for text contrast */
+    filter: brightness(60%);  /* Darken the image for text contrast */
     animation: openCloseFlyers 5s infinite ease-in-out;
 }
 
 /* Keyframes for opening and closing the flyers */
 @keyframes openCloseFlyers {
     0% {
-        width: 0%;
+        width: 10%;  /* Start at 10% */
     }
     25% {
-        width: 25%;  /* Final width for the flyer when it is opened */
+        width: 50%;  /* Open halfway */
     }
     50% {
-        width: 0%;  /* Start closing */
+        width: 100%;  /* Fully opened */
     }
     75% {
-        width: 100%;  /* Final width for the flyer when it is opened again */
+        width: 50%;  /* Start closing */
     }
     100% {
-        width: 0%;  /* Fully closed */
+        width: 10%;  /* Fully closed */
     }
 }
 
@@ -615,29 +615,67 @@ footer span {
 /* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
     .flyer-space-left, .flyer-space-right {
-        width: 10%;  /* Initially hidden for mobile */
+        width: 18%;  /* Flyers start at 10% for mobile */
     }
 
     .flyer-image {
-        animation: openCloseFlyers 5s infinite ease-in-out;
+        animation: openCloseFlyersMobile 5s infinite ease-in-out;
+    }
+
+    /* Keyframes for mobile devices */
+    @keyframes openCloseFlyersMobile {
+        0% {
+            width: 10%;
+        }
+        25% {
+            width: 50%;
+        }
+        50% {
+            width: 100%;
+        }
+        75% {
+            width: 50%;
+        }
+        100% {
+            width: 10%;
+        }
     }
 }
 
 /* Tablets (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .flyer-space-left, .flyer-space-right {
-        width: 10%;  /* Initially hidden for tablets */
+        width: 10%;  /* Flyers start at 10% for tablets */
     }
 
     .flyer-image {
-        animation: openCloseFlyers 5s infinite ease-in-out;
+        animation: openCloseFlyersTablet 5s infinite ease-in-out;
+    }
+
+    /* Keyframes for tablets */
+    @keyframes openCloseFlyersTablet {
+        0% {
+            width: 10%;
+        }
+        25% {
+            width: 50%;
+        }
+        50% {
+            width: 100%;
+        }
+        75% {
+            width: 50%;
+        }
+        100% {
+            width: 10%;
+        }
     }
 }
 
 /* Desktop (1025px and above) */
 @media (min-width: 1025px) {
     .flyer-space-left, .flyer-space-right {
-        width: 10%;  /* Adjust flyer space for desktop */
+        width: 10%;  /* Flyers width for desktop */
     }
 
     .flyer-image {
