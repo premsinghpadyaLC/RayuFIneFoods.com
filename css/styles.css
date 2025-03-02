@@ -615,7 +615,7 @@ footer span {
 /* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
     .flyer-space-left, .flyer-space-right {
-        width: 17%;  /* Flyers start at 10% for mobile */
+        width: 20%;  /* Flyers start at 10% for mobile */
     }
 
     .flyer-image {
