@@ -7,7 +7,7 @@ class MyHeader extends HTMLElement {
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">Rayu Fine Foods</a>
+                    <a class="navbar-brand" href="index.html"><b>Rayu Fine Foods</b></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -32,7 +32,7 @@ customElements.define('aliya-header', MyHeader);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer>
+        <footer style="background-image: url('assets/bg.jfif'); background-size: cover; background-position: center; background-attachment: fixed; text-align: center; padding: 20px; color: black;">
             <span>&copy; 2025 Rayu Fine Foods</span>
             <div class="w3-flex">
                 <a href="https://www.facebook.com" target="_blank">

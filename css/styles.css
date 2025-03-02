@@ -398,6 +398,48 @@ footer span {
 }
 
 /* ==========================
+  🌟 Footer Styling
+=========================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-image: url('path-to-your-image.jpg');  /* Add path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* Ensures the background stays fixed */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+/* Copyright Text */
+footer span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Social Media Icons Container */
+.w3-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between icons */
+    flex-wrap: wrap; /* Ensures icons wrap on smaller screens */
+}
+
+/* Social Media Icons */
+.w3-flex a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.w3-flex a img:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================
   🌟 Hero Section Styles
 =========================== */
 .hero {
@@ -406,6 +448,7 @@ footer span {
     align-items: center;
     text-align: center;
     position: relative;
+    background-position: center;  /* Center the background image */
 }
 
 .hero-content {
@@ -414,39 +457,6 @@ footer span {
     z-index: 10;
 }
 
-.flyer-space-left, .flyer-space-right {
-    width: 10%;  /* Adjust for desired flyer space width */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 5;
-}
-
-.flyer-space-left {
-    left: 0;
-}
-
-.flyer-space-right {
-    right: 0;
-}
-
-.flyer-content {
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flyer-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);  /* Darken the image for text contrast */
-}
 
 /* ==========================
   🌟 Marquee Styles
@@ -491,14 +501,6 @@ footer span {
     font-size: 18px; /* Adjust font size for smaller screens */
   }
 
-  .flyer-space-left, .flyer-space-right {
-    width: 20%; /* Increase flyer space for mobile */
-  }
-
-  .flyer-image {
-    object-position: center center;
-  }
-
   .welcome-marquee {
     font-size: 12px; /* Smaller text for mobile */
   }
@@ -516,14 +518,6 @@ footer span {
 
   .hero-content h1, .hero-content p {
     font-size: 24px; /* Adjust font size for tablet */
-  }
-
-  .flyer-space-left, .flyer-space-right {
-    width: 15%; /* Moderate flyer space for tablet */
-  }
-
-  .flyer-image {
-    object-position: center center;
   }
 
   .welcome-marquee {
@@ -545,14 +539,6 @@ footer span {
     font-size: 36px; /* Larger font size for desktop */
   }
 
-  .flyer-space-left, .flyer-space-right {
-    width: 10%; /* Default flyer space for desktop */
-  }
-
-  .flyer-image {
-    object-position: center center;
-  }
-
   .welcome-marquee {
     font-size: 16px; /* Larger text for desktop */
   }
@@ -560,4 +546,101 @@ footer span {
   .welcome-marquee-container {
     padding: 5px 0;
   }
+}
+
+
+/* ==========================
+  🌟 Flyer Animation Styles
+=========================== */
+.flyer-space-left, .flyer-space-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    transition: width 1s ease-in-out;
+}
+
+.flyer-space-left {
+    left: 0;
+    width: 0%;  /* Initially hidden */
+}
+
+.flyer-space-right {
+    right: 0;
+    width: 0%;  /* Initially hidden */
+}
+
+.flyer-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);  /* Darken the image for text contrast */
+    animation: openCloseFlyers 5s infinite ease-in-out;
+}
+
+/* Keyframes for opening and closing the flyers */
+@keyframes openCloseFlyers {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;  /* Final width for the flyer when it is opened */
+    }
+    50% {
+        width: 0%;  /* Start closing */
+    }
+    75% {
+        width: 100%;  /* Final width for the flyer when it is opened again */
+    }
+    100% {
+        width: 0%;  /* Fully closed */
+    }
+}
+
+/* ==========================
+  🌟 Mobile and Tablet Adjustments for Flyers
+=========================== */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .flyer-space-left, .flyer-space-right {
+        width: 0%;  /* Initially hidden for mobile */
+    }
+
+    .flyer-image {
+        animation: openCloseFlyers 6s infinite ease-in-out;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flyer-space-left, .flyer-space-right {
+        width: 0%;  /* Initially hidden for tablets */
+    }
+
+    .flyer-image {
+        animation: openCloseFlyers 5s infinite ease-in-out;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .flyer-space-left, .flyer-space-right {
+        width: 10%;  /* Adjust flyer space for desktop */
+    }
+
+    .flyer-image {
+        animation: openCloseFlyers 5s infinite ease-in-out;
+    }
 }
