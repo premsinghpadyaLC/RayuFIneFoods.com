@@ -615,18 +615,18 @@ footer span {
 /* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
     .flyer-space-left, .flyer-space-right {
-        width: 0%;  /* Initially hidden for mobile */
+        width: 10%;  /* Initially hidden for mobile */
     }
 
     .flyer-image {
-        animation: openCloseFlyers 6s infinite ease-in-out;
+        animation: openCloseFlyers 5s infinite ease-in-out;
     }
 }
 
 /* Tablets (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .flyer-space-left, .flyer-space-right {
-        width: 0%;  /* Initially hidden for tablets */
+        width: 10%;  /* Initially hidden for tablets */
     }
 
     .flyer-image {
